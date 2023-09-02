@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #76a2ff;
+  background-color: #445069;
 }
 
 body {
@@ -32,12 +32,19 @@ body {
 .login button,
 .signUp button {
   margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: .5rem;
   width: 320px;
-  height: 30px;
   cursor: pointer;
+  font-size: 1rem;
+}
+
+.login button:hover,
+.signUp button:hover {
+  transition: all .3s ease-in-out;
+  background-color: #232423;
+  color: white;
 }
 
 .login label,
@@ -45,7 +52,7 @@ body {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  color: white;
+  color: #ccc;
 }
 
 .board {
@@ -92,11 +99,35 @@ h4 {
   width: 220px;
   height: 30px;
 }
+
 .joinGame button {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  /* margin: 10px; */
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: .5rem;
   width: 220px;
-  height: 51px;
   cursor: pointer;
+  font-size: 1rem;
+}
+
+.joinGame button:hover {
+  transition: all .3s ease-in-out;
+  background-color: #232423;
+  color: white;
+}
+
+.logout {
+  margin-right: 5rem;
+  font-size: 1rem;
+  padding: .5rem;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background-color: white;
+  color: black;
+  transition: all .3s ease;
 }

@@ -35,7 +35,7 @@ const SignUp = ({ setIsAuth }) => {
                 setUser({ ...user, password: event.target.value });
             }} />
 
-            <button onClick={signUp}>Sign Up</button>
+            <button className='signup' onClick={signUp}>Sign Up</button>
         </div>
     );
 }
